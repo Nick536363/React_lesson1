@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Сайт с счетчиком
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## О проекте
 
-## Available Scripts
+Данный проект представляет собой веб-сайт написанный на фреймворке языка программирования JavaScript под названием React. Сам веб-сайт представляет счетчик, с возможностью отнимать и добавлять единицу от значения.
 
-In the project directory, you can run:
 
-### `npm start`
+## Установка
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Чтобы установить данный репозиторий выполните в вашем терминале следующую команду
+```bash
+git clone https://github.com/Nick536363/React_lesson1
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Если же у вас не установлена утилита *git* тогда вы можете скачать проект прямо с сервиса *GitHub*, либо же скачать git с [этого сайта](https://git-scm.com/downloads)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Перед тем как использовать данный проект вам следует установить **Node.js** и **NPM**, если вы еще этого не сделали.
+Ниже будут приведены способы установки на системах *Linux* и *Windows*
 
-### `npm run build`
+> ### Linux
+> Откройте свой терминал и введите следующие команды:
+```bash
+sudo apt install npm
+sudo apt install nodejs
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+>Либо же
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+sudo apt install npm nodejs
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> ### Windows
+>Для того чтобы установить Node.js вместе с NPM посетите [этот сайт](https://nodejs.org/)
 
-### `npm run eject`
+### Проверка рабоспособности
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Для того чтобы проверить работоспособность установленных вышепреведенных зависимостей, выполните следующие действия:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Зайдите в терминал и выполните следующую команду
+```bash
+node
+```
+Если вы увидели похожее приглашение как на изображении снизу, значит вы всё выполнили правильно
+![Node.js](node.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Следом, в вашем терминале выполните вторую команду
+```bash
+npm -h
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Если вам в терминал вывелся список комманд для NPM - вы всё сделали правильно и зависимость установлена успешно!
+![npm](npm.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Запуск веб-сайта
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Чтобы запустить веб-сайт, в терминале перейдите в коренной каталог проекта и выполните следующую команду
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+После чего у вас должна будет открыться вкладка с сайтом. Если же этого не произошло перейдите по [этой ссылке](http://localhost:3000) либо впишите в адресной строке вашего браузера *http://localhost:3000/*
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Если вы сделали всё правильно то содержимое страницы должно соответсвовать изображению ниже
+![succes](success.png)
