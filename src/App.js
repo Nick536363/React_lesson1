@@ -1,9 +1,9 @@
 import './App.css';
-import helloCounter from './Counter';
+import HelloCounter from './Counter';
 
 function App() {
   return(
-    helloCounter()
+    HelloCounter()
   );
 }
 
